@@ -1,0 +1,46 @@
+<HTML>
+    <head>
+        <title>Books</title>
+		<link rel="stylesheet" href="CSS/Block.css">
+        <link rel="stylesheet" href="CSS/Style.css">
+        <link rel="stylesheet" href="CSS/Modal.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <button onclick="Main.checkList('likesList',this)" class="head_button thisOFF">Liked</button>
+            <button onclick="Main.checkList('randomList',this)" class="head_button thisON">List</button>
+        </header>
+        <div class="fixed_main" onscroll="Main.arrlist.randomList.AddNewElements(this)">
+            <main >
+                
+                <div id="modal" class="modal  PanelClose">
+                    <span class="close PanelClose">&times;</span>
+                    <div id="modal-content" class="PanelClose">
+                        
+                    </div>
+                </div>
+                  
+
+                <div onclick="" id="Mainlist">
+
+					<div onclick="" id="randomList" class="list display_Block_"></div>
+					
+					<div onclick="" id="likesList" class="list display_None_"></div>
+
+				</div>
+					
+                
+            </main>
+        </div>
+        
+        <script src="JavaScript/Panel.js"></script>
+        <script src="JavaScript/Block.js"></script>
+        <script src="JavaScript/List.js"></script>
+        <script src="JavaScript/LocalStorage.js"></script>
+        <script src="JavaScript/Main.js"></script>
+    </body>
+</HTML>
